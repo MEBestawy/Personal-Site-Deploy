@@ -1,9 +1,0 @@
-/* Shared functions for scss files */
-
-// Importing Utilities 
-@import "CustomFonts";
-
-// Get value given a map and a key
-@function get($map, $key) {
-    @return map-get($map, $key);
-}
