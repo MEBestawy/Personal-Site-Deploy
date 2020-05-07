@@ -1,0 +1,32 @@
+/* Styles for resume page */
+
+// Importing Utilities
+@import "../Utilities/Utilities"; 
+ 
+body, html {
+	background-color: get($colors, lighter-dark) !important;
+}
+
+#ResumeContainer {
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+}
+
+#ResViewer {
+	overflow: hidden;     
+	pointer-events: none;        
+	display: center;
+} 
+
+embed {
+	height: 100%;
+	width: 100%;
+}
+
+// Screen smaller than medium size
+@media screen and (max-width: get($breakPoints, mid)) {
+	#ResumeContainer {
+		margin-top: 0px;
+	}
+}

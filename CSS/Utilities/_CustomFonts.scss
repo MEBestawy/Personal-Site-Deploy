@@ -1,0 +1,53 @@
+/* Custom fonts for webpages */
+
+// Wrexham Script font
+@font-face { 
+    font-family: 'Wrexham Script';
+    src: url('/Fonts/WrexhamScript/WrexhamScript.eot');
+    src: url('/Fonts/WrexhamScript/WrexhamScript.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/WrexhamScript/WrexhamScript.woff2') format('woff2'),
+        url('/Fonts/WrexhamScript/WrexhamScript.woff') format('woff'),
+        url('/Fonts/WrexhamScript/WrexhamScript.ttf') format('truetype'),
+        url('/Fonts/WrexhamScript/WrexhamScript.svg#WrexhamScript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Helvetica Neue font
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/Fonts/HelveticaNeue/HelveticaNeue.eot');
+    src: url('/Fonts/HelveticaNeue/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/HelveticaNeue/HelveticaNeue.woff2') format('woff2'),
+        url('/Fonts/HelveticaNeue/HelveticaNeue.woff') format('woff'),
+        url('/Fonts/HelveticaNeue/HelveticaNeue.ttf') format('truetype'),
+        url('/Fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Bodoni font
+@font-face {
+    font-family: 'Bodoni';
+    src: url('/Fonts/Bodoni/Bodoni-Normal.eot');
+    src: url('/Fonts/Bodoni/Bodoni-Normal.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/Bodoni/Bodoni-Normal.woff2') format('woff2'),
+        url('/Fonts/Bodoni/Bodoni-Normal.woff') format('woff'),
+        url('/Fonts/Bodoni/Bodoni-Normal.ttf') format('truetype'),
+        url('/Fonts/Bodoni/Bodoni-Normal.svg#Bodoni-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Bungasai font
+@font-face {
+    font-family: 'Bungasai';
+    src: url('/Fonts/Bungasai/Bungasai.eot');
+    src: url('/Fonts/Bungasai/Bungasai.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/Bungasai/Bungasai.woff2') format('woff2'),
+        url('/Fonts/Bungasai/Bungasai.woff') format('woff'),
+        url('/Fonts/Bungasai/Bungasai.ttf') format('truetype'),
+        url('/Fonts/Bungasai/Bungasai.svg#Bungasai') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

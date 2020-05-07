@@ -1,0 +1,38 @@
+<!-- HTML for the footer component -->
+<!DOCTYPE html>
+<html lang = "en">
+<body>
+	<!-- Footer section -->
+	<div id="FooterContent">
+		<!-- Section for links to contact -->
+		<div class="FooterColumn" id="ContactColumn">
+			<div class="FooterTitle Title" id= "ContactTitle">
+				My links
+			</div>
+			<ul id="FooterLinks">
+				<li><a href="https://www.linkedin.com/in/bestawy/"><button>LinkedIn</button></a></li>
+				<li><a href="https://github.com/MEBestawy"><button>Github</button></a></li>
+				<li><a href="mailto:m.e.bestawy@gmail.com"><button>Email</button></a></li>
+			</ul>
+		</div>
+		
+		<!-- Section for sending a message -->			
+		<div class="FooterColumn" id="ContactForm">
+			<div class="FooterTitle Title">
+				Say hello!
+			</div>
+
+			<!-- Input form -->
+			<form target="_blank" id="FooterContactForm" name="FooterContactForm" 
+			action="/HTML/SubmissionSuccess.html" method="POST" data-netlify="true">
+				<input id="SubjectBox" type="text" name="SubjectInput" placeholder="Subject...">
+				<textarea id="MessageBox" name="MessageBox" rows="4" placeholder="Don't forget to include your contact info!"></textarea>
+				<input id="SendButton" name="sendButton" type="submit" value="Send">			
+			</form>
+		</div>
+	</div>
+
+	<!-- Site owner -->
+	<div id="SiteOwner"> Mahmoud El Bestawy</div>
+</body>
+</html>

@@ -1,0 +1,445 @@
+/* Styles for the footer component */
+/* File for importing all available scss imports */
+/* Variables for other scss files */
+/* Shared functions for scss files */
+/* Custom fonts for webpages */
+@font-face {
+  font-family: 'Wrexham Script';
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot");
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot?#iefix") format("embedded-opentype"), url("/Fonts/WrexhamScript/WrexhamScript.woff2") format("woff2"), url("/Fonts/WrexhamScript/WrexhamScript.woff") format("woff"), url("/Fonts/WrexhamScript/WrexhamScript.ttf") format("truetype"), url("/Fonts/WrexhamScript/WrexhamScript.svg#WrexhamScript") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot");
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff2") format("woff2"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("/Fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("/Fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot");
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bodoni/Bodoni-Normal.woff2") format("woff2"), url("/Fonts/Bodoni/Bodoni-Normal.woff") format("woff"), url("/Fonts/Bodoni/Bodoni-Normal.ttf") format("truetype"), url("/Fonts/Bodoni/Bodoni-Normal.svg#Bodoni-Normal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bungasai';
+  src: url("/Fonts/Bungasai/Bungasai.eot");
+  src: url("/Fonts/Bungasai/Bungasai.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bungasai/Bungasai.woff2") format("woff2"), url("/Fonts/Bungasai/Bungasai.woff") format("woff"), url("/Fonts/Bungasai/Bungasai.ttf") format("truetype"), url("/Fonts/Bungasai/Bungasai.svg#Bungasai") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom fonts for webpages */
+@font-face {
+  font-family: 'Wrexham Script';
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot");
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot?#iefix") format("embedded-opentype"), url("/Fonts/WrexhamScript/WrexhamScript.woff2") format("woff2"), url("/Fonts/WrexhamScript/WrexhamScript.woff") format("woff"), url("/Fonts/WrexhamScript/WrexhamScript.ttf") format("truetype"), url("/Fonts/WrexhamScript/WrexhamScript.svg#WrexhamScript") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot");
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff2") format("woff2"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("/Fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("/Fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot");
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bodoni/Bodoni-Normal.woff2") format("woff2"), url("/Fonts/Bodoni/Bodoni-Normal.woff") format("woff"), url("/Fonts/Bodoni/Bodoni-Normal.ttf") format("truetype"), url("/Fonts/Bodoni/Bodoni-Normal.svg#Bodoni-Normal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bungasai';
+  src: url("/Fonts/Bungasai/Bungasai.eot");
+  src: url("/Fonts/Bungasai/Bungasai.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bungasai/Bungasai.woff2") format("woff2"), url("/Fonts/Bungasai/Bungasai.woff") format("woff"), url("/Fonts/Bungasai/Bungasai.ttf") format("truetype"), url("/Fonts/Bungasai/Bungasai.svg#Bungasai") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Shared functions for scss files */
+/* Custom fonts for webpages */
+@font-face {
+  font-family: 'Wrexham Script';
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot");
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot?#iefix") format("embedded-opentype"), url("/Fonts/WrexhamScript/WrexhamScript.woff2") format("woff2"), url("/Fonts/WrexhamScript/WrexhamScript.woff") format("woff"), url("/Fonts/WrexhamScript/WrexhamScript.ttf") format("truetype"), url("/Fonts/WrexhamScript/WrexhamScript.svg#WrexhamScript") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot");
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff2") format("woff2"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("/Fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("/Fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot");
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bodoni/Bodoni-Normal.woff2") format("woff2"), url("/Fonts/Bodoni/Bodoni-Normal.woff") format("woff"), url("/Fonts/Bodoni/Bodoni-Normal.ttf") format("truetype"), url("/Fonts/Bodoni/Bodoni-Normal.svg#Bodoni-Normal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bungasai';
+  src: url("/Fonts/Bungasai/Bungasai.eot");
+  src: url("/Fonts/Bungasai/Bungasai.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bungasai/Bungasai.woff2") format("woff2"), url("/Fonts/Bungasai/Bungasai.woff") format("woff"), url("/Fonts/Bungasai/Bungasai.ttf") format("truetype"), url("/Fonts/Bungasai/Bungasai.svg#Bungasai") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom fonts for webpages */
+@font-face {
+  font-family: 'Wrexham Script';
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot");
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot?#iefix") format("embedded-opentype"), url("/Fonts/WrexhamScript/WrexhamScript.woff2") format("woff2"), url("/Fonts/WrexhamScript/WrexhamScript.woff") format("woff"), url("/Fonts/WrexhamScript/WrexhamScript.ttf") format("truetype"), url("/Fonts/WrexhamScript/WrexhamScript.svg#WrexhamScript") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot");
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff2") format("woff2"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("/Fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("/Fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot");
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bodoni/Bodoni-Normal.woff2") format("woff2"), url("/Fonts/Bodoni/Bodoni-Normal.woff") format("woff"), url("/Fonts/Bodoni/Bodoni-Normal.ttf") format("truetype"), url("/Fonts/Bodoni/Bodoni-Normal.svg#Bodoni-Normal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bungasai';
+  src: url("/Fonts/Bungasai/Bungasai.eot");
+  src: url("/Fonts/Bungasai/Bungasai.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bungasai/Bungasai.woff2") format("woff2"), url("/Fonts/Bungasai/Bungasai.woff") format("woff"), url("/Fonts/Bungasai/Bungasai.ttf") format("truetype"), url("/Fonts/Bungasai/Bungasai.svg#Bungasai") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Shared styles for webpages */
+/* Variables for other scss files */
+/* Shared functions for scss files */
+/* Custom fonts for webpages */
+@font-face {
+  font-family: 'Wrexham Script';
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot");
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot?#iefix") format("embedded-opentype"), url("/Fonts/WrexhamScript/WrexhamScript.woff2") format("woff2"), url("/Fonts/WrexhamScript/WrexhamScript.woff") format("woff"), url("/Fonts/WrexhamScript/WrexhamScript.ttf") format("truetype"), url("/Fonts/WrexhamScript/WrexhamScript.svg#WrexhamScript") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot");
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff2") format("woff2"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("/Fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("/Fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot");
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bodoni/Bodoni-Normal.woff2") format("woff2"), url("/Fonts/Bodoni/Bodoni-Normal.woff") format("woff"), url("/Fonts/Bodoni/Bodoni-Normal.ttf") format("truetype"), url("/Fonts/Bodoni/Bodoni-Normal.svg#Bodoni-Normal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bungasai';
+  src: url("/Fonts/Bungasai/Bungasai.eot");
+  src: url("/Fonts/Bungasai/Bungasai.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bungasai/Bungasai.woff2") format("woff2"), url("/Fonts/Bungasai/Bungasai.woff") format("woff"), url("/Fonts/Bungasai/Bungasai.ttf") format("truetype"), url("/Fonts/Bungasai/Bungasai.svg#Bungasai") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom fonts for webpages */
+@font-face {
+  font-family: 'Wrexham Script';
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot");
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot?#iefix") format("embedded-opentype"), url("/Fonts/WrexhamScript/WrexhamScript.woff2") format("woff2"), url("/Fonts/WrexhamScript/WrexhamScript.woff") format("woff"), url("/Fonts/WrexhamScript/WrexhamScript.ttf") format("truetype"), url("/Fonts/WrexhamScript/WrexhamScript.svg#WrexhamScript") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot");
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff2") format("woff2"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("/Fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("/Fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot");
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bodoni/Bodoni-Normal.woff2") format("woff2"), url("/Fonts/Bodoni/Bodoni-Normal.woff") format("woff"), url("/Fonts/Bodoni/Bodoni-Normal.ttf") format("truetype"), url("/Fonts/Bodoni/Bodoni-Normal.svg#Bodoni-Normal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bungasai';
+  src: url("/Fonts/Bungasai/Bungasai.eot");
+  src: url("/Fonts/Bungasai/Bungasai.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bungasai/Bungasai.woff2") format("woff2"), url("/Fonts/Bungasai/Bungasai.woff") format("woff"), url("/Fonts/Bungasai/Bungasai.ttf") format("truetype"), url("/Fonts/Bungasai/Bungasai.svg#Bungasai") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Shared functions for scss files */
+/* Custom fonts for webpages */
+@font-face {
+  font-family: 'Wrexham Script';
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot");
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot?#iefix") format("embedded-opentype"), url("/Fonts/WrexhamScript/WrexhamScript.woff2") format("woff2"), url("/Fonts/WrexhamScript/WrexhamScript.woff") format("woff"), url("/Fonts/WrexhamScript/WrexhamScript.ttf") format("truetype"), url("/Fonts/WrexhamScript/WrexhamScript.svg#WrexhamScript") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot");
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff2") format("woff2"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("/Fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("/Fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot");
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bodoni/Bodoni-Normal.woff2") format("woff2"), url("/Fonts/Bodoni/Bodoni-Normal.woff") format("woff"), url("/Fonts/Bodoni/Bodoni-Normal.ttf") format("truetype"), url("/Fonts/Bodoni/Bodoni-Normal.svg#Bodoni-Normal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bungasai';
+  src: url("/Fonts/Bungasai/Bungasai.eot");
+  src: url("/Fonts/Bungasai/Bungasai.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bungasai/Bungasai.woff2") format("woff2"), url("/Fonts/Bungasai/Bungasai.woff") format("woff"), url("/Fonts/Bungasai/Bungasai.ttf") format("truetype"), url("/Fonts/Bungasai/Bungasai.svg#Bungasai") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom fonts for webpages */
+@font-face {
+  font-family: 'Wrexham Script';
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot");
+  src: url("/Fonts/WrexhamScript/WrexhamScript.eot?#iefix") format("embedded-opentype"), url("/Fonts/WrexhamScript/WrexhamScript.woff2") format("woff2"), url("/Fonts/WrexhamScript/WrexhamScript.woff") format("woff"), url("/Fonts/WrexhamScript/WrexhamScript.ttf") format("truetype"), url("/Fonts/WrexhamScript/WrexhamScript.svg#WrexhamScript") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot");
+  src: url("/Fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff2") format("woff2"), url("/Fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("/Fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype"), url("/Fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot");
+  src: url("/Fonts/Bodoni/Bodoni-Normal.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bodoni/Bodoni-Normal.woff2") format("woff2"), url("/Fonts/Bodoni/Bodoni-Normal.woff") format("woff"), url("/Fonts/Bodoni/Bodoni-Normal.ttf") format("truetype"), url("/Fonts/Bodoni/Bodoni-Normal.svg#Bodoni-Normal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bungasai';
+  src: url("/Fonts/Bungasai/Bungasai.eot");
+  src: url("/Fonts/Bungasai/Bungasai.eot?#iefix") format("embedded-opentype"), url("/Fonts/Bungasai/Bungasai.woff2") format("woff2"), url("/Fonts/Bungasai/Bungasai.woff") format("woff"), url("/Fonts/Bungasai/Bungasai.ttf") format("truetype"), url("/Fonts/Bungasai/Bungasai.svg#Bungasai") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #f0f0f0;
+}
+
+body > * {
+  font-family: "Helvetica Neue";
+  color: #0f0f0f;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: "Helvetica Neue";
+  color: #303030;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+button:focus, a:focus, input:focus {
+  outline: none;
+}
+
+button, a, input[type="submit"] {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #0f0f0f;
+  width: 100%;
+  position: absolute;
+  border-top: 2px solid #2bcc81;
+}
+
+#FooterContent {
+  padding: 40px;
+  padding-top: 60px;
+  padding-bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 60px;
+      grid-template-areas: "ContactLinks ContactForm";
+  color: #f0f0f0;
+}
+
+#FooterContent .FooterTitle {
+  width: 100%;
+  text-align: left;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#FooterContent .FooterColumn {
+  width: 100%;
+}
+
+#FooterContent #ContactColumn {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ContactLinks;
+}
+
+#FooterContent #ContactForm {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: ContactForm;
+}
+
+#FooterContent #FooterLinks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#FooterContent #FooterLinks li button {
+  color: #2bcc81;
+  text-align: left;
+  width: 100%;
+  background-color: #303030;
+  font-size: 1.2em;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+#FooterContent #FooterLinks li button:hover {
+  color: #303030;
+  background-color: #2bcc81;
+}
+
+#FooterContent .ContentInput, #FooterContent input, #FooterContent textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#FooterContent input, #FooterContent textarea {
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: "Helvetica Neue";
+  color: #f0f0f0;
+  background-color: #303030;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#FooterContent #SendButton {
+  padding: 10px 0;
+  font-size: 1.2em;
+  font-family: "Helvetica Neue";
+  text-indent: 0px;
+  text-align: center;
+  position: relative;
+  width: 50%;
+  border: solid 2px #2bcc81;
+  background-color: #2bcc81;
+  color: #0f0f0f;
+  float: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#FooterContent #SendButton:hover {
+  background-color: #303030;
+  color: #2bcc81;
+}
+
+#SiteOwner {
+  opacity: 0.6;
+  font-size: 1.3em;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 100px auto;
+  margin-bottom: 150px;
+  color: #f0f0f0;
+  font-family: "Bodoni";
+}
+
+@media screen and (max-width: 830px) {
+  #FooterContent {
+        grid-template-areas: "ContactLinks" "ContactForm";
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #FooterContent {
+        grid-template-areas: "ContactLinks" "ContactForm";
+    padding: 25px;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  #FooterContent .FooterTitle {
+    font-size: 2.2em;
+  }
+  #FooterContent #FooterLinks li button {
+    text-align: center;
+  }
+  #FooterContent #SendButton {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=FooterDesigner.css.map */

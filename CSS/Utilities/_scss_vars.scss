@@ -1,0 +1,31 @@
+/* Variables for other scss files */
+
+// Importing Utilities
+@import "scss_funcs"; 
+@import "CustomFonts";
+
+// Breakpoints for page designs
+$breakPoints: (
+	small: 540px,
+	mid: 830px
+); 
+
+// Color plalette
+$colors: (
+	dark: rgb(15, 15, 15),
+	light: rgb(240, 240, 240),
+	lighter-dark: rgb(48, 48, 48),
+    high-light: #2bcc81
+);
+
+// Dimentions of Google play badge
+$badgeStyling: (
+	gPlayBadge-width: 564px,
+	gPlayBadge-height: 168px
+);
+
+// Website fonts
+$fonts: (
+	title: "Bodoni",
+	content: "Helvetica Neue"
+);
