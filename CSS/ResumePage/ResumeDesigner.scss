@@ -19,14 +19,48 @@ body, html {
 	display: center;
 } 
 
+
 embed {
-	height: 100%;
+	height: auto; 
 	width: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+	max-width: 1200px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#DownloadResumeButton {
+	position: fixed;
+	z-index: 3;
+	font-size: 1em;
+	letter-spacing: 1.2px;
+	padding: 10px 25px;
+	color: get($colors, dark);
+	background: get($colors, high-light);
+	border: solid 2px get($colors, dark);
+	box-sizing: border-box;
+
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	margin-bottom: 100px;
+}
+
+#DownloadResumeButton:hover {
+	color: get($colors, high-light);
+	background: get($colors, dark);
+	border-color: get($colors, high-light)
 }
 
 // Screen smaller than medium size
 @media screen and (max-width: get($breakPoints, mid)) {
 	#ResumeContainer {
 		margin-top: 0px;
+	}
+
+	embed {
+		padding: 10px;
 	}
 }
