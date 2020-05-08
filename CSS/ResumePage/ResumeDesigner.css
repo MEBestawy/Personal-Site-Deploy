@@ -348,14 +348,18 @@ embed {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  margin: 0;
   bottom: 0;
   margin-bottom: 100px;
-}
-
-#DownloadResumeButton:hover {
   color: #2bcc81;
   background: #0f0f0f;
   border-color: #2bcc81;
+}
+
+#DownloadResumeButton:hover {
+  color: #f0f0f0;
+  background: #0f0f0f;
+  border-color: #f0f0f0;
 }
 
 @media screen and (max-width: 830px) {

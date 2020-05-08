@@ -41,17 +41,20 @@ embed {
 	background: get($colors, high-light);
 	border: solid 2px get($colors, dark);
 	box-sizing: border-box;
-
 	left: 50%;
 	transform: translateX(-50%);
+	margin:0;
 	bottom: 0;
 	margin-bottom: 100px;
+	color: get($colors, high-light);
+	background: get($colors, dark);
+	border-color: get($colors, high-light);
 }
 
 #DownloadResumeButton:hover {
-	color: get($colors, high-light);
+	color: get($colors, light);
 	background: get($colors, dark);
-	border-color: get($colors, high-light)
+	border-color: get($colors, light);
 }
 
 // Screen smaller than medium size
