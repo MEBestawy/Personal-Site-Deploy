@@ -1,233 +1,242 @@
 /* Styles for header menu */
 
 // Importing Utilities
-@import "../Utilities/Utilities"; 
+@import "../Utilities/Utilities";
 
 // Size of side menu
 $side-menu-width: 260px;
 
 /* Menu bars icon */
 #MobileToggle {
-	transition: top 0.4s;
-	padding: 3px;
-	margin-right: 15px;
-	position: fixed;
-	right:0;
-	background: get($colors, dark);
-	width: fit-content;
-	z-index: 10;
-	display: none;
-	border: 0.5px solid get($colors, high-light);
-	user-select: none;
-	cursor: pointer;
+  transition: top 0.4s;
+  padding: 3px;
+  margin-right: 15px;
+  position: fixed;
+  right: 0;
+  background: get($colors, dark);
+  width: fit-content;
+  z-index: 10;
+  display: none;
+  border: 0.5px solid get($colors, high-light);
+  user-select: none;
+  cursor: pointer;
 }
 .line {
-	transition: all 0.15s ease-in;
-	border-radius: 5px;
+  transition: all 0.15s ease-in;
+  border-radius: 5px;
 }
 
 .CancelMenu .One {
-	transform: translate(0px, 11px) rotate(-45deg);
+  transform: translate(0px, 11px) rotate(-45deg);
 }
 
 .CancelMenu .Two {
-	opacity: 0;	
+  opacity: 0;
 }
 
 .CancelMenu .Three {
-	transform: translate(0px, -11px) rotate(45deg);
+  transform: translate(0px, -11px) rotate(45deg);
 }
 
-#MobileToggle >* {
-	margin: 7px;
-	height: 4px;
-	width: 30px;
-	background-color: get($colors, high-light);
+#MobileToggle > * {
+  margin: 7px;
+  height: 4px;
+  width: 30px;
+  background-color: get($colors, high-light);
 }
 
 /* Top menu */
 #HeaderMenu {
-	padding-right: 80px;
-	padding-top: 13px;
-	margin:0;
-	right: 0;
-	z-index: 8;
-	 
-	.MenuOption { 
-		font-family: get($fonts, content);
-		border: none;
-		background: transparent;
-		margin: 0; margin-right: 10px; margin-left: 10px;
-		padding: 3px; padding-right: 10px; padding-left: 10px;
-		position: relative;
-		text-align: center;
-		font-size: 24px;
-		color: get($colors, light);
-		border-bottom: solid 2px transparent;
-	}
+  padding-right: 80px;
+  padding-top: 13px;
+  margin: 0;
+  background: transparent;
+  right: 0;
+  z-index: 8;
 
-	.MenuOption:hover {
-		border-bottom-color: get($colors, light);
-	}
+  .MenuOption {
+    font-family: get($fonts, content);
+    border: none;
+    background: transparent;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    color: get($colors, light);
+    border-bottom: solid 2px transparent;
+  }
 
-	.ChosenOpt,  .ChosenOpt:hover {
-		color: get($colors, high-light);
-		border-bottom-color: get($colors, high-light);
-	}
+  .MenuOption:hover {
+    border-bottom-color: get($colors, light);
+  }
+
+  .ChosenOpt,
+  .ChosenOpt:hover {
+    color: get($colors, high-light);
+    border-bottom-color: get($colors, high-light);
+  }
 }
 
-#MenuBack, menu {
-	position: fixed;
-	background-color: get($colors, dark);
-	padding: 0;
-	margin: 0;
-	transition: top 0.3s;
+#MenuBack,
+menu {
+  position: fixed;
+  background-color: get($colors, dark);
+  padding: 0;
+  margin: 0;
+  transition: top 0.3s;
 }
 
 #MenuBack {
-	height: 50px;
-	width: 100%;
-	z-index: 4;
+  height: 50px;
+  width: 100%;
+  z-index: 5;
 }
 
 .Mobile {
-	display: inherit;
+  display: inherit;
 }
 
 #MobileToggle {
-	display: inherit;
+  display: inherit;
 }
 
 /* Side menu */
 #SideMenu {
-	background-color: transparent;
-	position: fixed;
-	z-index: 6; 
-	height:100%;
-	top: 50px;
-	width: $side-menu-width;
-	overflow-y: scroll;
-	transition: 0.6s;
+  background-color: transparent;
+  position: fixed;
+  z-index: 6;
+  height: 100%;
+  top: 50px;
+  width: $side-menu-width;
+  overflow-y: scroll;
+  transition: 0.6s;
 }
 
 .InactiveSideMenu {
-	right: -$side-menu-width;
+  right: -$side-menu-width;
 }
 
 .ActiveSideMenu {
-	right: 0;
+  right: 0;
 }
 
 #SideMenuOptions {
-	position: absolute;
-	background-color: transparent;
-	width: 100%;
-	height: auto;
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: auto;
 }
 
-#SideMenuOptions >* {
-	margin:auto;
-	border: solid 1px get($colors, light);
-	text-align: center;
-	width: fit-content;
-	margin: 50px auto;
-	display: block;
-	box-shadow: 0px 0px 5px 0px get($colors, dark);
+#SideMenuOptions > * {
+  margin: auto;
+  border: solid 1px get($colors, light);
+  text-align: center;
+  width: fit-content;
+  margin: 50px auto;
+  display: block;
+  box-shadow: 0px 0px 5px 0px get($colors, dark);
 }
 
 .SideMenuOpt {
-	font-family: get($fonts, content);
-	border: none;
-	padding: 20px 25px;
-	background: get($colors, dark);
-	color: get($colors, light);
-	font-size: 15px;
-	letter-spacing: 2px;
+  font-family: get($fonts, content);
+  border: none;
+  padding: 20px 25px;
+  background: get($colors, dark);
+  color: get($colors, light);
+  font-size: 15px;
+  letter-spacing: 2px;
 }
 
-#SideMenuOptions >*:hover, .SideMenuOpt:hover {
-	border-color: get($colors, high-light);
-	color: get($colors, high-light);
-	box-shadow: 0px 0px 5px 0px get($colors, high-light);
+#SideMenuOptions > *:hover,
+.SideMenuOpt:hover {
+  border-color: get($colors, high-light);
+  color: get($colors, high-light);
+  box-shadow: 0px 0px 5px 0px get($colors, high-light);
 }
 
 .ScrollUpPageMenu:not(.FreezeOnScreen) {
-	top: 0;
+  top: 0;
 }
 
 .ScrollDownMenu:not(.FreezeOnScreen) {
-	top: -50px;
+  top: -50px;
 }
 
 .ScrollUpToggleMenu:not(.FreezeOnScreen) {
-	top: 10px;
+  top: 10px;
 }
 
 .FreezeOnScreen {
-	top:10px;
+  top: 10px;
 }
 
 //Smaller than medium screen
 @media screen and (max-width: get($breakPoints, mid)) {
-	
-	#SideMenu {
-		width: 100%;
-		right: 0;
-	}
+  #SideMenu {
+    width: 100%;
+    right: 0;
+  }
 
-	#HeaderMenu {
-		top: 70px;
-	}
+  #HeaderMenu {
+    top: 70px;
+  }
 
-	.InactiveSideMenu {
-		display: none;
-	}
+  .InactiveSideMenu {
+    display: none;
+  }
 
-	#SideMenu {
-		background-color: get($colors, dark);
-	}
+  #SideMenu {
+    background-color: get($colors, dark);
+  }
 
-	#SideMenuOptions {
-		margin-top: 50px;
-	}
+  #SideMenuOptions {
+    margin-top: 50px;
+  }
 
-	#MenuBack {
-		z-index:7;
-		top: 50px;
-		border-top: solid 1px get($colors, high-light);
-  	}
+  #MenuBack {
+    z-index: 7;
+    top: 50px;
+    border-top: solid 1px get($colors, high-light);
+  }
 
-	.HideOnMobile {
-		top: 61px;
-		display: none;
-	}
+  .HideOnMobile {
+    top: 61px;
+    display: none;
+  }
 
-	#HeaderMenu {
-		padding: 0;
-		height: fit-content;
-	}
-	
-	.PressedMenu {
-		position: fixed;
-		height: calc(100% - 57px);
-		margin: 0; padding: 0;
-		width: 100%; 
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
+  #HeaderMenu {
+    padding: 0;
+    height: fit-content;
+  }
 
-		.MenuOption {
-			width: 100%;
-			margin: 0;
-			padding: 3px;
-			position: relative;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			text-align: center;
-		}
-	}
+  .PressedMenu {
+    position: fixed;
+    height: calc(100% - 57px);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
-	.Mobile, #MobileToggle {
-		display: absolute;
-	}
+    .MenuOption {
+      width: 100%;
+      margin: 0;
+      padding: 3px;
+      position: relative;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+  }
+
+  .Mobile,
+  #MobileToggle {
+    display: absolute;
+  }
 }
