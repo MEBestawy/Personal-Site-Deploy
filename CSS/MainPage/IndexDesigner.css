@@ -379,7 +379,7 @@ button, a, input[type="submit"] {
   padding: 30px;
   margin: auto;
   max-width: 1100px;
-  border: solid 3px #2bcc81;
+  border: solid 10px #303030;
   -webkit-box-shadow: 5px 5px 8px rgba(48, 48, 48, 0.3);
           box-shadow: 5px 5px 8px rgba(48, 48, 48, 0.3);
   background: #ebeaea;
@@ -559,7 +559,7 @@ blockquote {
   .Msg {
     font-size: 1.2em;
     letter-spacing: 1.6px;
-    line-height: 1.8em;
+    line-height: 1.7em;
     font-family: "Helvetica Neue";
     margin: 0;
   }
@@ -576,6 +576,7 @@ blockquote {
   #AboutSection {
     padding: 15px;
     margin: 0 20px;
+    border-width: 5px;
   }
   .Msg {
     font-size: 1.1em;
