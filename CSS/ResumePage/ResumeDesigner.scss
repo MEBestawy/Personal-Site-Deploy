@@ -1,69 +1,28 @@
 /* Styles for resume page */
 
 // Importing Utilities
-@import "../Utilities/Utilities"; 
- 
-body, html {
-	background-color: get($colors, lighter-dark) !important;
+@import "../Utilities/Utilities";
+
+body,
+html {
+  background-color: get($colors, lighter-dark) !important;
 }
 
 #ResumeContainer {
-	margin-top: 50px;
-	width: 100%;
-	height: 100%;
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
 }
-
-#ResViewer {
-	overflow: hidden;     
-	pointer-events: none;        
-	display: center;
-} 
-
 
 embed {
-	height: auto; 
-	width: 100%;
-	padding: 40px;
-	box-sizing: border-box;
-	max-width: 1200px;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-#DownloadResumeButton {
-	position: fixed;
-	z-index: 3;
-	font-size: 1em;
-	letter-spacing: 1.2px;
-	padding: 10px 25px;
-	color: get($colors, dark);
-	background: get($colors, high-light);
-	border: solid 2px get($colors, dark);
-	box-sizing: border-box;
-	left: 50%;
-	transform: translateX(-50%);
-	margin:0;
-	bottom: 0;
-	margin-bottom: 100px;
-	color: get($colors, high-light);
-	background: get($colors, dark);
-	border-color: get($colors, high-light);
-}
-
-#DownloadResumeButton:hover {
-	color: get($colors, light);
-	background: get($colors, dark);
-	border-color: get($colors, light);
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 // Screen smaller than medium size
 @media screen and (max-width: get($breakPoints, mid)) {
-	#ResumeContainer {
-		margin-top: 0px;
-	}
-
-	embed {
-		padding: 10px;
-	}
+  #ResumeContainer {
+    margin-top: 0px;
+  }
 }
