@@ -1,83 +1,90 @@
 /* Styling file for form submission page */
 
 // Importing Utilities
-@import "../Utilities/Utilities"; 
+@import "../Utilities/Utilities";
+
+html {
+  background-image: linear-gradient(
+    180deg,
+    get($colors, high-light),
+    get($colors, dark)
+  ) !important;
+}
 
 body {
-    background-image: linear-gradient(180deg ,#2BCC81, get($colors, dark));
+  background: transparent !important;
 }
 
 #DisplayModule {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-	box-shadow: 0px 0px 5px 0px get($colors, dark);
-    color: get($colors, light);
-    background-color: get($colors, lighter-dark);
-    text-align: center;
-    margin: auto 50px;
-    border: solid 5px get($colors, high-light);
-    padding: 30px;
-    max-width: 1000px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0px 0px 5px 0px get($colors, dark);
+  color: get($colors, light);
+  background-color: get($colors, lighter-dark);
+  text-align: center;
+  margin: auto 50px;
+  border: solid 5px get($colors, high-light);
+  padding: 30px;
+  max-width: 1000px;
 }
 
 #SubmissionTitle {
-    font-family: get($fonts, title);
-    color: get($colors, high-light);
-    font-size: 3em;
-    margin-bottom: 20px;
+  font-family: get($fonts, title);
+  color: get($colors, high-light);
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 #SubmissionDesc {
-    font-size: 1.1em;
-    letter-spacing: 1.4px;
-    line-height: 1.6em;
+  font-size: 1.1em;
+  letter-spacing: 1.4px;
+  line-height: 1.6em;
 }
 
 #SubmissionOptions {
-    margin: 30px 0;
-    margin-top: 50px;
+  margin: 30px 0;
+  margin-top: 50px;
 }
 
 #SubmissionOptions > * {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 button {
-    color: get($colors, dark);
-    font-size: 1.2em;
-    letter-spacing: 1px;
-    padding: 10px 25px;
-    border: solid 2px get($colors, high-light);
-    color: get($colors, dark);
-    background-color: get($colors, high-light);
-    box-sizing: border-box;
+  color: get($colors, dark);
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  border: solid 2px get($colors, high-light);
+  color: get($colors, dark);
+  background-color: get($colors, high-light);
+  box-sizing: border-box;
 }
 
 button:hover {
-    color: get($colors, high-light);
-    background-color: get($colors, dark);
+  color: get($colors, high-light);
+  background-color: get($colors, dark);
 }
 
 // Small screen
 @media screen and (max-width: get($breakPoints, small)) {
-    #DisplayModule {
-        margin: auto 15px;
-    }
+  #DisplayModule {
+    margin: auto 15px;
+  }
 
-    #SubmissionOptions > * {
-        margin: 0;
-    }
+  #SubmissionOptions > * {
+    margin: 0;
+  }
 
-    #BackToSiteButton {
-        margin-bottom: 25px;
-    }
+  #BackToSiteButton {
+    margin-bottom: 25px;
+  }
 }
 
 // Wide screen
 @media screen and (min-width: 1150px) {
-    #DisplayModule {
-        margin: auto;
-    }
+  #DisplayModule {
+    margin: auto;
+  }
 }
-
