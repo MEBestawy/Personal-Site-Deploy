@@ -367,14 +367,17 @@ footer {
   background-color: #2bcc81;
 }
 
-#FooterContent .ContentInput, #FooterContent input, #FooterContent textarea {
+#FooterContent .ContentInput,
+#FooterContent input,
+#FooterContent textarea {
   margin: 0;
   border: 0;
   padding: 0;
   width: 100%;
 }
 
-#FooterContent input, #FooterContent textarea {
+#FooterContent input,
+#FooterContent textarea {
   margin-bottom: 25px;
   padding: 10px;
   font-size: 1.2em;
@@ -386,6 +389,7 @@ footer {
 }
 
 #FooterContent #SendButton {
+  -webkit-appearance: none;
   padding: 10px 0;
   font-size: 1.2em;
   font-family: "Helvetica Neue";

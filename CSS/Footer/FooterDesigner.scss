@@ -1,148 +1,153 @@
 /* Styles for the footer component */
 
 // Importing Utilities
-@import "../Utilities/Utilities"; 
- 
+@import "../Utilities/Utilities";
+
 // General properties for footer
 footer {
-	background-color: get($colors, dark);
-	width: 100%;
-	position: absolute;
-	border-top: 2px solid get($colors, high-light);
+  background-color: get($colors, dark);
+  width: 100%;
+  position: absolute;
+  border-top: 2px solid get($colors, high-light);
 }
 
 // Content inside footer
 #FooterContent {
-	padding: 40px;
-	padding-top: 60px;
-	padding-bottom: 0;
+  padding: 40px;
+  padding-top: 60px;
+  padding-bottom: 0;
 
-	display: grid;
-	grid-gap: 60px;
-	grid-template-areas:
-		"ContactLinks ContactForm";
-	color: get($colors, light);
+  display: grid;
+  grid-gap: 60px;
+  grid-template-areas: "ContactLinks ContactForm";
+  color: get($colors, light);
 
-	.FooterTitle {
-		width: 100%;
-		text-align: left;
-		font-size: 2.5em;
-		margin-bottom: 20px;
-	}
+  .FooterTitle {
+    width: 100%;
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
 
-	.FooterColumn {
-		width: 100%;
-	}
+  .FooterColumn {
+    width: 100%;
+  }
 
-	#ContactColumn {
-		grid-area: ContactLinks;
-	}
+  #ContactColumn {
+    grid-area: ContactLinks;
+  }
 
-	#ContactForm {
-		grid-area: ContactForm;
-	}
+  #ContactForm {
+    grid-area: ContactForm;
+  }
 
-	#FooterLinks {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
+  #FooterLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
-		li button{
-			color: get($colors, high-light);
-			text-align: left;
-			width: 100%;
-			background-color: get($colors, lighter-dark);
-			font-size: 1.2em;
-			padding: 10px;
-			margin-bottom: 25px;
-		}
+    li button {
+      color: get($colors, high-light);
+      text-align: left;
+      width: 100%;
+      background-color: get($colors, lighter-dark);
+      font-size: 1.2em;
+      padding: 10px;
+      margin-bottom: 25px;
+    }
 
-		li button:hover {
-			color: get($colors, lighter-dark);
-			background-color: get($colors, high-light);
-		}
-	}
+    li button:hover {
+      color: get($colors, lighter-dark);
+      background-color: get($colors, high-light);
+    }
+  }
 
-	.ContentInput, input, textarea {
-		margin: 0; border: 0; padding: 0;
-		width: 100%;
-	}
+  .ContentInput,
+  input,
+  textarea {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+  }
 
-	input, textarea {
-		margin-bottom: 25px;
-		padding: 10px;
-		font-size: 1.2em;
-		font-family: get($fonts, content);
-		color: get($colors, light);
-		background-color: get($colors, lighter-dark);
-		box-sizing: border-box;
-	}
+  input,
+  textarea {
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: get($fonts, content);
+    color: get($colors, light);
+    background-color: get($colors, lighter-dark);
+    box-sizing: border-box;
+  }
 
-	#SendButton {
-		padding: 10px 0;
-		font-size: 1.2em;
-		font-family: get($fonts, content);
-		text-indent: 0px;
-		text-align: center;
-		position: relative;
-		width: 50%;
-		border: solid 2px get($colors, high-light);
-		background-color: get($colors, high-light);
-		color: get($colors, dark);
-		float: right;
-		box-sizing: border-box;
-	}
+  #SendButton {
+    -webkit-appearance: none;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-family: get($fonts, content);
+    text-indent: 0px;
+    text-align: center;
+    position: relative;
+    width: 50%;
+    border: solid 2px get($colors, high-light);
+    background-color: get($colors, high-light);
+    color: get($colors, dark);
+    float: right;
+    box-sizing: border-box;
+  }
 
-	#SendButton:hover {
-		background-color: get($colors, lighter-dark);
-		color: get($colors, high-light);
-	}
+  #SendButton:hover {
+    background-color: get($colors, lighter-dark);
+    color: get($colors, high-light);
+  }
 }
 
 // Site owner
 #SiteOwner {
-	opacity: 0.6;
-	font-size: 1.3em;
-	position: relative;
-	width: fit-content;
-	margin: 100px auto;
-	margin-bottom: 150px;
-	color: get($colors, light);
-	font-family: get($fonts, title);
+  opacity: 0.6;
+  font-size: 1.3em;
+  position: relative;
+  width: fit-content;
+  margin: 100px auto;
+  margin-bottom: 150px;
+  color: get($colors, light);
+  font-family: get($fonts, title);
 }
 
 // Smaller that medium screen
 @media screen and (max-width: get($breakPoints, mid)) {
-	#FooterContent {
-		grid-template-areas:
-		"ContactLinks"
-		"ContactForm";
-    }
+  #FooterContent {
+    grid-template-areas:
+      "ContactLinks"
+      "ContactForm";
+  }
 }
 
 // Small screen
 @media screen and (max-width: get($breakPoints, small)) {
-	#FooterContent {
-		grid-template-areas:
-		"ContactLinks"
-    "ContactForm";
-        
+  #FooterContent {
+    grid-template-areas:
+      "ContactLinks"
+      "ContactForm";
+
     padding: 25px;
-		padding-top: 40px;
-		padding-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 0;
 
-		.FooterTitle {
-			font-size: 2.2em;
-		}
+    .FooterTitle {
+      font-size: 2.2em;
+    }
 
-		#FooterLinks {
-			li button{
-				text-align: center;
-			}
-		}
+    #FooterLinks {
+      li button {
+        text-align: center;
+      }
+    }
 
-		#SendButton {
-			width: 100%;
-		}
+    #SendButton {
+      width: 100%;
+    }
   }
 }
