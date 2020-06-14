@@ -1,50 +1,59 @@
 <!-- Page displayed when form is submitted -->
 <!DOCTYPE html>
-<html lang = "en">
-	<head>
-        <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-        <!-- Icon thumbnails -->
-    	<link  rel="icon" type="image/png" href="/Images/Favicon.png">
-    	<link  rel="apple-touch-icon" type="image/png" href="/Images/SiteThumbnail.png">
-        
-        <!-- Styles -->
-		<link rel = "stylesheet" href = "/CSS/SubmissionPage/SubmissionDesigner.css"/>
-        
-        <!-- Scripts -->
-        <script src="/Scripts/jquery.js"></script>
-		<script src="/Scripts/IncludeElements.js"></script>
-        <script src="/Scripts/SubmissionPageScript.js"></script>
-        
-		<title>Submission Successful</title>
-	</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-	<body>
-        <!-- Modeule to display message -->
-        <div id="DisplayModule">
-            <!-- Title -->
-            <div id="SubmissionTitle">
-                Success!
-            </div>
+    <!-- Icon thumbnails -->
+    <link rel="icon" type="image/png" href="/Images/Favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="/Images/SiteThumbnail.png"
+    />
 
-            <!-- Description -->
-            <div id="SubmissionDesc">
-                Thank you for contacting me! I have received your message and will respond as soon as possible.
-            </div>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/CSS/Header/HeaderDesigner.css" />
+    <link rel="stylesheet" href="/CSS/SubmissionPage/SubmissionDesigner.css" />
 
-            <!-- Options for user -->
-            <div id="SubmissionOptions">
-                <a href="/index.html">
-                    <button id="BackToSiteButton">
-                        Back to website
-                    </button>
-                </a>
-                <button id="ExitButton">
-                    Exit
-                </button>
-            </div>
-        </div>
-	</body>
+    <!-- Scripts -->
+    <script src="/Scripts/jquery.js"></script>
+    <script src="/Scripts/IncludeElements.js"></script>
+    <script src="/Scripts/SubmissionPageScript.js"></script>
+
+    <script src="/Scripts/HeaderScript.js"></script>
+
+    <title>Submission Successful</title>
+  </head>
+
+  <body>
+    <header></header>
+    <!-- Modeule to display message -->
+    <div id="DisplayModule">
+      <!-- Title -->
+      <div id="SubmissionTitle">
+        Success!
+      </div>
+
+      <!-- Description -->
+      <div id="SubmissionDesc">
+        Thank you for contacting me! I have received your message and will
+        respond as soon as possible.
+      </div>
+
+      <!-- Options for user -->
+      <div id="SubmissionOptions">
+        <a href="/index.html">
+          <button id="BackToSiteButton">
+            Back to website
+          </button>
+        </a>
+        <button id="ExitButton">
+          Exit
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
