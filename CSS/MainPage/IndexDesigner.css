@@ -271,13 +271,13 @@
   font-style: normal;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   margin: 0px;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #f0f0f0;
 }
 
 body > * {
@@ -297,15 +297,24 @@ button {
   border: 0;
 }
 
-button:focus, a:focus, input:focus {
+button:focus,
+a:focus,
+input:focus {
   outline: none;
 }
 
-button, a, input[type="submit"] {
+button,
+a,
+input[type="submit"] {
   cursor: pointer;
 }
 
 /* General section styles */
+body {
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
 .CenterContent {
   position: relative;
   height: 100%;
@@ -326,16 +335,6 @@ button, a, input[type="submit"] {
   padding: 70px;
   padding-bottom: 200px;
   padding-top: 200px;
-}
-
-.DarkSection {
-  background-color: #0f0f0f;
-  color: #f0f0f0;
-}
-
-.LightSection {
-  background-color: #f0f0f0;
-  color: #0f0f0f;
 }
 
 .ContentHeader {
@@ -400,112 +399,6 @@ button, a, input[type="submit"] {
 .Msg a {
   text-decoration: underline;
   color: #00c600;
-}
-
-/* Work section */
-#WorkView {
-  background: #303030;
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 0;
-  color: #f0f0f0;
-  padding-bottom: 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-}
-
-.WorkHeader {
-  position: relative;
-  width: 100%;
-  height: 250px;
-  border-bottom: solid 2px #2bcc81;
-  background-image: linear-gradient(30deg, #3b0080, #ea0101);
-}
-
-.WorkBody {
-  position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 100%;
-}
-
-.WorkLogo {
-  position: relative;
-  margin: 0 auto;
-  margin-top: -85px;
-  border-radius: 25px;
-  border: solid 2px #2bcc81;
-  width: 120px;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("/Images/LOGO.png");
-}
-
-.WorkBodyTop {
-  margin-top: -15px;
-  padding: 0 20px;
-  width: 100%;
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.WorkProjTitle {
-  top: 0;
-  margin-top: 14.8px;
-  font-size: 2.3em;
-  float: left;
-}
-
-.DownloadBadge {
-  top: 0;
-  float: right;
-  background-color: transparent;
-  background-image: url("/Images/GooglePlayBadge.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 58.8px;
-  width: 197.4px;
-}
-
-.WorkBodyDesc {
-  text-align: left;
-  padding: 0 40px;
-  margin-top: 10px;
-  font-size: 1.1em;
-  letter-spacing: 1.2px;
-  line-height: 1.6em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.RepoButton {
-  margin-top: 30px;
-  width: 300px;
-  padding: 10px;
-  font-size: 1.2em;
-  color: #0f0f0f;
-  background-color: #2bcc81;
-  border: solid 1px #2bcc81;
-}
-
-.RepoButton:hover {
-  color: #2bcc81;
-  background-color: #0f0f0f;
-}
-
-@media screen and (max-width: 730px) {
-  .WorkProjTitle,
-  .DownloadBadge {
-    float: none;
-    margin-top: 20px;
-  }
-  .WorkHeader {
-    height: 200px;
-  }
 }
 
 /* Quote section styles */
@@ -595,17 +488,6 @@ blockquote {
   }
   .ContentSection .ContentHeader {
     margin: 0 auto;
-  }
-  #WorkView {
-    margin: 0 20px;
-    margin-top: 25px;
-  }
-  .WorkHeader {
-    height: 150px;
-  }
-  .RepoButton {
-    width: 70%;
-    font-size: 1.1em;
   }
 }
 /*# sourceMappingURL=IndexDesigner.css.map */

@@ -11,6 +11,10 @@ footer {
   border-top: 2px solid get($colors, high-light);
 }
 
+.Title {
+  font-family: get($fonts, title);
+}
+
 // Content inside footer
 #FooterContent {
   padding: 40px;

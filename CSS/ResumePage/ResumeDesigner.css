@@ -271,13 +271,13 @@
   font-style: normal;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   margin: 0px;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #f0f0f0;
 }
 
 body > * {
@@ -297,11 +297,15 @@ button {
   border: 0;
 }
 
-button:focus, a:focus, input:focus {
+button:focus,
+a:focus,
+input:focus {
   outline: none;
 }
 
-button, a, input[type="submit"] {
+button,
+a,
+input[type="submit"] {
   cursor: pointer;
 }
 

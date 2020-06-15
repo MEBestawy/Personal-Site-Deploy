@@ -1,0 +1,171 @@
+/* Styles for the work page */
+
+// Importing Utilities
+@import "../Utilities/Utilities";
+
+body {
+  width: 100%;
+  background: get($colors, dark);
+}
+
+.WorkPageBackground {
+  margin: auto;
+  max-width: 1000px;
+  padding: 0 50px;
+}
+
+.WorkPageTitle {
+  color: get($colors, light);
+  font-family: get($fonts, title);
+  font-size: 4em;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.WorkView {
+  background: get($colors, lighter-dark);
+  margin: 0 auto;
+  margin-bottom: 150px;
+  padding: 0;
+  color: get($colors, light);
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.WorkHeader {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-bottom: solid 2px get($colors, high-light);
+}
+
+#CityHeader {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(255, 108, 108) 0%,
+    rgba(224, 60, 60, 1) 100%
+  );
+}
+#TODHeader {
+  background-image: linear-gradient(30deg, #3b0080, #ea0101);
+}
+
+.WorkBody {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+}
+
+.WorkLogo {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -85px;
+  border-radius: 25px;
+  border: solid 2px get($colors, high-light);
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#CityLogo {
+  background-image: url("/Images/CityLogo.png");
+}
+#TODLogo {
+  background-image: url("/Images/TODLogo.png");
+}
+
+.WorkBodyTop {
+  margin-top: -15px;
+  padding: 0 20px;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.WorkProjTitle {
+  top: 0;
+  margin-top: 14.8px;
+  font-size: 2.3em;
+  float: left;
+}
+
+.WorkBodyDesc {
+  text-align: left;
+  padding: 0 40px;
+  margin-top: 10px;
+  font-size: 1.1em;
+  letter-spacing: 1.2px;
+  line-height: 1.6em;
+  font-family: get($colors, content);
+  box-sizing: border-box;
+}
+
+.RepoButton {
+  margin-top: 30px;
+  width: 300px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: get($colors, content);
+  color: get($colors, dark);
+  background-color: get($colors, high-light);
+  border: solid 1px get($colors, high-light);
+}
+
+.RepoButton:hover {
+  color: get($colors, high-light);
+  background-color: get($colors, dark);
+}
+
+// Specific styling for work section
+@media screen and (max-width: 730px) {
+  .WorkProjTitle {
+    float: none;
+    margin-top: 20px;
+  }
+
+  .WorkHeader {
+    height: 200px;
+  }
+}
+
+//Midium screen
+@media screen and (max-width: get($breakPoints, mid)) {
+  .WorkPageBackground {
+    margin: 0 40px;
+    padding: 0;
+  }
+
+  .WorkPageTitle {
+    font-size: 3.3em;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+}
+
+//Small screen
+@media screen and (max-width: get($breakPoints, small)) {
+  .WorkPageBackground {
+    margin: 0 20px;
+  }
+
+  .WorkHeader {
+    height: 150px;
+  }
+
+  .WorkView {
+    margin-bottom: 100px;
+  }
+
+  .WorkPageTitle {
+    margin-bottom: 15px;
+  }
+
+  .RepoButton {
+    width: 70%;
+    font-size: 1.1em;
+  }
+}

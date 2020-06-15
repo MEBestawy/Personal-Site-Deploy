@@ -1,4 +1,4 @@
-/* Styles for the footer component */
+/* Styles for the work page */
 /* File for importing all available scss imports */
 /* Variables for other scss files */
 /* Shared functions for scss files */
@@ -309,149 +309,162 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-footer {
-  background-color: #0f0f0f;
+body {
   width: 100%;
-  position: absolute;
-  border-top: 2px solid #2bcc81;
+  background: #0f0f0f;
 }
 
-.Title {
+.WorkPageBackground {
+  margin: auto;
+  max-width: 1000px;
+  padding: 0 50px;
+}
+
+.WorkPageTitle {
+  color: #f0f0f0;
   font-family: "Bodoni";
+  font-size: 4em;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
-#FooterContent {
-  padding: 40px;
-  padding-top: 60px;
-  padding-bottom: 0;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 60px;
-      grid-template-areas: "ContactLinks ContactForm";
-  color: #f0f0f0;
-}
-
-#FooterContent .FooterTitle {
-  width: 100%;
-  text-align: left;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-#FooterContent .FooterColumn {
-  width: 100%;
-}
-
-#FooterContent #ContactColumn {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: ContactLinks;
-}
-
-#FooterContent #ContactForm {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: ContactForm;
-}
-
-#FooterContent #FooterLinks {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#FooterContent #FooterLinks li button {
-  color: #2bcc81;
-  text-align: left;
-  width: 100%;
-  background-color: #303030;
-  font-size: 1.2em;
-  padding: 10px;
-  margin-bottom: 25px;
-}
-
-#FooterContent #FooterLinks li button:hover {
-  color: #303030;
-  background-color: #2bcc81;
-}
-
-#FooterContent .ContentInput,
-#FooterContent input,
-#FooterContent textarea {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  width: 100%;
-}
-
-#FooterContent input,
-#FooterContent textarea {
-  margin-bottom: 25px;
-  padding: 10px;
-  font-size: 1.2em;
-  font-family: "Helvetica Neue";
-  color: #f0f0f0;
-  background-color: #303030;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-#FooterContent #SendButton {
-  -webkit-appearance: none;
-  padding: 10px 0;
-  font-size: 1.2em;
-  font-family: "Helvetica Neue";
-  text-indent: 0px;
-  text-align: center;
-  position: relative;
-  width: 50%;
-  border: solid 2px #2bcc81;
-  background-color: #2bcc81;
-  color: #0f0f0f;
-  float: right;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-#FooterContent #SendButton:hover {
-  background-color: #303030;
-  color: #2bcc81;
-}
-
-#SiteOwner {
-  opacity: 0.6;
-  font-size: 1.3em;
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 100px auto;
+.WorkView {
+  background: #303030;
+  margin: 0 auto;
   margin-bottom: 150px;
+  padding: 0;
   color: #f0f0f0;
-  font-family: "Bodoni";
+  padding-bottom: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.WorkHeader {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-bottom: solid 2px #2bcc81;
+}
+
+#CityHeader {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0%, #ff6c6c), to(#e03c3c));
+  background: linear-gradient(180deg, white 0%, #ff6c6c 0%, #e03c3c 100%);
+}
+
+#TODHeader {
+  background-image: linear-gradient(30deg, #3b0080, #ea0101);
+}
+
+.WorkBody {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+.WorkLogo {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -85px;
+  border-radius: 25px;
+  border: solid 2px #2bcc81;
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#CityLogo {
+  background-image: url("/Images/CityLogo.png");
+}
+
+#TODLogo {
+  background-image: url("/Images/TODLogo.png");
+}
+
+.WorkBodyTop {
+  margin-top: -15px;
+  padding: 0 20px;
+  width: 100%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.WorkProjTitle {
+  top: 0;
+  margin-top: 14.8px;
+  font-size: 2.3em;
+  float: left;
+}
+
+.WorkBodyDesc {
+  text-align: left;
+  padding: 0 40px;
+  margin-top: 10px;
+  font-size: 1.1em;
+  letter-spacing: 1.2px;
+  line-height: 1.6em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.RepoButton {
+  margin-top: 30px;
+  width: 300px;
+  padding: 10px;
+  font-size: 1.2em;
+  color: #0f0f0f;
+  background-color: #2bcc81;
+  border: solid 1px #2bcc81;
+}
+
+.RepoButton:hover {
+  color: #2bcc81;
+  background-color: #0f0f0f;
+}
+
+@media screen and (max-width: 730px) {
+  .WorkProjTitle {
+    float: none;
+    margin-top: 20px;
+  }
+  .WorkHeader {
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 830px) {
-  #FooterContent {
-        grid-template-areas: "ContactLinks" "ContactForm";
+  .WorkPageBackground {
+    margin: 0 40px;
+    padding: 0;
+  }
+  .WorkPageTitle {
+    font-size: 3.3em;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 540px) {
-  #FooterContent {
-        grid-template-areas: "ContactLinks" "ContactForm";
-    padding: 25px;
-    padding-top: 40px;
-    padding-bottom: 0;
+  .WorkPageBackground {
+    margin: 0 20px;
   }
-  #FooterContent .FooterTitle {
-    font-size: 2.2em;
+  .WorkHeader {
+    height: 150px;
   }
-  #FooterContent #FooterLinks li button {
-    text-align: center;
+  .WorkView {
+    margin-bottom: 100px;
   }
-  #FooterContent #SendButton {
-    width: 100%;
+  .WorkPageTitle {
+    margin-bottom: 15px;
+  }
+  .RepoButton {
+    width: 70%;
+    font-size: 1.1em;
   }
 }
-/*# sourceMappingURL=FooterDesigner.css.map */
+/*# sourceMappingURL=WorkDesigner.css.map */

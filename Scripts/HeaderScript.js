@@ -18,6 +18,8 @@ var menuMakingInterval = setInterval(() => {
     // Highlight the appropriate button depending on current page
     if (document.URL.toLowerCase().includes("resume")) {
       $("#ResumeBtn")[0].classList.add("ChosenOpt");
+    } else if (document.URL.toLowerCase().includes("work")) {
+      $("#WorkBtn")[0].classList.add("ChosenOpt");
     } else {
       $("#HomeBtn")[0].classList.add("ChosenOpt");
     }
