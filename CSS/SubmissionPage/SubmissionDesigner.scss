@@ -8,15 +8,15 @@ html {
     180deg,
     get($colors, high-light),
     get($colors, dark)
-  ) !important;
+  );
 }
 
 body {
-  background: transparent !important;
+  position: absolute;
 }
 
 #DisplayModule {
-  position: relative;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
   box-shadow: 0px 0px 5px 0px get($colors, dark);
@@ -85,6 +85,8 @@ button:hover {
 // Wide screen
 @media screen and (min-width: 1150px) {
   #DisplayModule {
-    margin: auto;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 }
