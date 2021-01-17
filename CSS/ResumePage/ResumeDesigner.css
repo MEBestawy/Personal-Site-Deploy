@@ -455,7 +455,7 @@ body {
           box-shadow: -6px 5px 10px 4px rgba(0, 0, 0, 0.72);
 }
 
-#aaa {
+#repeatedBackgroudTitle {
   -webkit-box-shadow: none;
   box-shadow: none;
   text-shadow: -6px 5px 4px rgba(0, 0, 0, 0.72);
