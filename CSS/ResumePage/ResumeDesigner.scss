@@ -3,26 +3,226 @@
 // Importing Utilities
 @import "../Utilities/Utilities";
 
-body,
-html {
-  background-color: get($colors, lighter-dark) !important;
+body {
+  background: get($colors, dark);
 }
 
-#ResumeContainer {
-  margin-top: 50px;
-  width: 100%;
-  height: 100%;
+#ResumeSectionsContainer {
+  color: get($colors, light);
 }
 
-embed {
-  height: 100%;
-  width: 100%;
+.ResumeSectionTitle {
+  color: get($colors, light);
+  font-family: get($fonts, title);
+  font-size: 3.5em;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.ResumeSectionTitle ~ .ResumeSectionTitle {
+  margin-top: 10px;
+}
+
+#skillModulesContainer {
+  margin-top: 40px;
+}
+
+.inlineContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+#skillsListContainer {
+  justify-content: flex-start;
+}
+
+#skillsListContainer > * {
+  margin-right: 15px;
+}
+
+.skillModule {
+  background-color: get($colors, lighter-dark);
+  margin-bottom: 100px;
+  padding: 15px 10px;
+  min-width: 35%;
+  max-width: 45%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.skillModuleIcon {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.skillModuleTitle {
+  font-family: get($fonts, title);
+  font-size: 2em;
+  margin-bottom: 2px;
+}
+
+.skillModuleDesc {
+  letter-spacing: 0.05em;
+  line-height: 1.4em;
+}
+
+.tool {
+  padding: 10px 15px;
+  letter-spacing: 0.05em;
+  color: get($colors, dark);
+  background-color: get($colors, high-light);
+  margin-bottom: 30px;
+}
+
+.dropdownContent {
+  display: none;
   position: absolute;
+  margin-top: -30px;
+  background-color: get($colors, light);
+}
+
+.dropdownContent * {
+  letter-spacing: 0.05em;
+  color: get($colors, light);
+  background-color: get($colors, lighter-dark);
+  padding: 10px 12px;
+  z-index: 3000;
+  border-bottom: solid 1px get($colors, high-light);
+}
+
+.dropdown:hover .tool {
+  background-color: get($colors, lighter-dark);
+  color: get($colors, high-light);
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.verticalBreak {
+  margin-top: 100px;
+}
+
+#repeatedBackgroundSection {
+  width: 100%;
+  background: repeating-linear-gradient(
+    315deg,
+    get($colors, dark),
+    get($colors, dark) 75px,
+    get($colors, lighter-dark) 75px,
+    get($colors, lighter-dark) 150px
+  );
+}
+
+#repeatedBackgroundContent,
+#ResumeSectionsContainer {
+  margin: auto;
+  max-width: 1000px;
+  padding: 0 50px;
+}
+
+#repeatedBackgroundContent {
+  padding: 10px 50px;
+  padding-bottom: 80px;
+}
+
+#repeatedBackgroundContent > * {
+  box-shadow: -6px 5px 10px 4px rgba(0, 0, 0, 0.72);
+}
+
+#aaa {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: -6px 5px 4px rgba(0, 0, 0, 0.72);
+}
+
+.checkMeOutButton {
+  max-width: 100%;
+  margin-top: 50px;
+  color: get($colors, darker-light);
+  background-color: get($colors, dark);
+  border: solid 3px get($colors, darker-light);
+  font-size: 1.2em;
+  padding: 15px 10px;
+  text-align: center;
+  letter-spacing: 00.025em;
+  display: block;
+}
+
+.checkMeOutButton:hover {
+  color: get($colors, dark);
+  background-color: get($colors, high-light);
+  border-color: get($colors, dark);
 }
 
 // Screen smaller than medium size
 @media screen and (max-width: get($breakPoints, mid)) {
-  #ResumeContainer {
-    margin-top: 0px;
+  .skillModule {
+    max-width: 100%;
+    margin-bottom: 60px;
+    padding: 10px;
+  }
+  .verticalBreak {
+    margin-top: 60px;
+  }
+}
+
+// Screen smaller than small size
+@media screen and (max-width: get($breakPoints, small)) {
+  .ResumeSectionTitle {
+    font-size: 2.8em;
+  }
+
+  .tool {
+    padding: 7px 12px;
+    margin-bottom: 15px;
+  }
+
+  #repeatedBackgroundContent,
+  #ResumeSectionsContainer {
+    margin: auto;
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+
+  #repeatedBackgroundContent {
+    padding: 5px 20px;
+    padding-bottom: 80px;
+  }
+
+  .dropdownContent {
+    margin-top: -15px;
+  }
+
+  .skillModuleTitle {
+    font-family: get($fonts, title);
+    font-size: 1.6em;
+  }
+
+  .skillModuleIcon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .skillModuleDesc {
+    letter-spacing: 0.025em;
+    line-height: 1.25em;
+  }
+
+  .checkMeOutButton {
+    margin-top: 50px;
+    border-width: 2px;
+    font-size: 1.1em;
+    padding: 10px 7px;
+    letter-spacing: 00.02em;
   }
 }

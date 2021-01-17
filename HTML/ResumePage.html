@@ -17,6 +17,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/CSS/ResumePage/ResumeDesigner.css" />
     <link rel="stylesheet" href="/CSS/Header/HeaderDesigner.css" />
+    <link rel="stylesheet" href="/CSS/Footer/FooterDesigner.css" />
 
     <!-- Scripts -->
     <script src="/Scripts/jquery.js"></script>
@@ -29,10 +30,234 @@
   <body>
     <!-- Header menu -->
     <header></header>
+    <div id="ResumeSectionsContainer">
+      <div class="ResumeSectionTitle">What I do...</div>
+      <div id="skillModulesContainer" class="inlineContainer">
+        <div class="skillModule">
+          <img src="/Images/agile.svg" class="skillModuleIcon" />
+          <div class="skillModuleBody">
+            <div class="skillModuleTitle">Software Design</div>
+            <div class="skillModuleDesc">
+              aliquet porttitor lacus luctus accumsan tortor posuere ac ut
+              consequat semper viverra nam libero justo laoreet sit amet cursus
+              sit amet dictum sit amet justo donec enim diam vulputate ut
+              pharetra sit amet aliquam id diam maecenas ultricies mi eget
+              mauris
+            </div>
+          </div>
+        </div>
 
-    <!-- Resume viewing -->
-    <div id="ResumeContainer">
-      <embed src="/Images/Resume.pdf" />
+        <div class="skillModule">
+          <img src="/Images/web_dev.svg" class="skillModuleIcon" />
+          <div class="skillModuleBody">
+            <div class="skillModuleTitle">Web Development</div>
+            <div class="skillModuleDesc">
+              potenti nullam ac tortor vitae purus faucibus ornare suspendisse
+              sed nisi lacus sed viverra tellus in hac habitasse platea dictumst
+              vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+              cras tincidunt lobortis feugiat
+            </div>
+          </div>
+        </div>
+
+        <div class="skillModule">
+          <img src="/Images/ubuntu_logo.svg" class="skillModuleIcon" />
+          <div class="skillModuleBody">
+            <div class="skillModuleTitle">Systems Programming</div>
+            <div class="skillModuleDesc">
+              potenti nullam ac tortor vitae purus faucibus ornare suspendisse
+              sed nisi lacus sed viverra tellus in hac habitasse platea dictumst
+              vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+              cras tincidunt lobortis feugiat vivamus at augue eget
+            </div>
+          </div>
+        </div>
+
+        <div class="skillModule">
+          <img src="/Images/chess_ai.svg" class="skillModuleIcon" />
+          <div class="skillModuleBody">
+            <div class="skillModuleTitle">Artificial Intelligence</div>
+            <div class="skillModuleDesc">
+              potenti nullam ac tortor vitae purus faucibus ornare suspendisse
+              sed nisi lacus sed viverra tellus in hac habitasse platea dictumst
+              vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+              cras
+            </div>
+          </div>
+        </div>
+
+        <div class="skillModule">
+          <img src="/Images/neural_net.svg" class="skillModuleIcon" />
+          <div class="skillModuleBody">
+            <div class="skillModuleTitle">Machine Learning</div>
+            <div class="skillModuleDesc">
+              turpis egestas integer eget aliquet nibh praesent tristique magna
+              sit amet purus gravida quis blandit turpis cursus in hac habitasse
+              platea dictumst quisque sagittis purus sit amet volutpat consequat
+              mauris nunc congue nisi vitae suscipit
+            </div>
+          </div>
+        </div>
+
+        <div class="skillModule">
+          <img src="/Images/android.svg" class="skillModuleIcon" />
+          <div class="skillModuleBody">
+            <div class="skillModuleTitle">App Development</div>
+            <div class="skillModuleDesc">
+              turpis egestas integer eget aliquet nibh praesent tristique magna
+              sit amet purus gravida quis blandit turpis cursus in hac habitasse
+              platea dictumst quisque sagittis purus sit amet volutpat consequat
+              mauris nunc congue nisi vitae suscipit tellus mauris a diam
+              maecenas sed enim ut sem viverra aliquet eget sit amet tellus
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ResumeSectionTitle">Skills & Tools...</div>
+      <div id="skillsListContainer" class="inlineContainer">
+        <div class="dropdown">
+          <div class="tool">Python</div>
+          <div class="dropdownContent">
+            <div>>4 years</div>
+            <div>Pytorch</div>
+            <div>Numpy</div>
+            <div>Scikit Learn</div>
+            <div>Pytest</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Java</div>
+          <div class="dropdownContent">
+            <div>>3 years</div>
+            <div>JavaFX</div>
+            <div>JUnit</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Javascript</div>
+          <div class="dropdownContent">
+            <div>>2 years</div>
+            <div>React</div>
+            <div>jQuery</div>
+            <div>ES6</div>
+            <div>Ajax</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Kotlin</div>
+          <div class="dropdownContent">
+            <div>>1 year</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">HTML5/CSS</div>
+          <div class="dropdownContent">
+            <div>>2 years</div>
+            <div>Bootstrap</div>
+            <div>SASS/SCSS</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">C/C++</div>
+          <div class="dropdownContent">
+            <div>>1 year</div>
+            <div>POSIX</div>
+            <div>CUDA</div>
+            <div>GDB</div>
+            <div>Valgrind</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Php</div>
+          <div class="dropdownContent">
+            <div>&#60;1 year</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Bash</div>
+          <div class="dropdownContent">
+            <div>>1 year</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">R</div>
+          <div class="dropdownContent">
+            <div>>3 years</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Jira</div>
+          <div class="dropdownContent">
+            <div>&#60;1 year</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Git</div>
+          <div class="dropdownContent">
+            <div>>2 years</div>
+            <div>Git Command Line</div>
+            <div>Github</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Raspberry Pi</div>
+          <div class="dropdownContent">
+            <div>>4 years</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Android Studio</div>
+          <div class="dropdownContent">
+            <div>>2 years</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">WordPress</div>
+          <div class="dropdownContent">
+            <div>&#60;1 years</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">AWS</div>
+          <div class="dropdownContent">
+            <div>&#60;1 years</div>
+            <div>Lightail</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Haskell</div>
+          <div class="dropdownContent">
+            <div>&#60;1 year</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">Racket</div>
+          <div class="dropdownContent">
+            <div>&#60;1 year</div>
+            <div>RackUnit</div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="tool">AdobeXD</div>
+          <div class="dropdownContent">
+            <div>>2 years</div>
+          </div>
+        </div>
+      </div>
+      <div class="verticalBreak"></div>
     </div>
+    <div id="repeatedBackgroundSection">
+      <div id="repeatedBackgroundContent">
+        <div id="aaa" class="ResumeSectionTitle">Check Me Out!</div>
+        <a href="/Images/Resume.pdf" class="checkMeOutButton" download>
+          Download My Resume
+        </a>
+        <a href="/HTML/WorkPage.html" class="checkMeOutButton">
+          Check Out My Work
+        </a>
+      </div>
+    </div>
+    <footer id="ContactSection"></footer>
   </body>
 </html>
